@@ -39,6 +39,9 @@ CREATE TABLE cr_address(
 INSERT INTO cr_address(street_code, district_code, building, extension, apartment) VALUES
   (1, 1, '10', '2', '121');
 
+ INSERT INTO cr_address(street_code, district_code, building, extension, apartment) VALUES
+  (1, 1, '421', null , 4 );
+
 CREATE TABLE cr_person(
  person_id SERIAL,
  sur_name varchar(100) not null,
@@ -85,11 +88,11 @@ INSERT INTO cr_address_person(address_id, person_id, start_date, end_date, tempo
 (1, 1, '2014-10-12', null, false);
 
 INSERT INTO cr_address_person(address_id, person_id, start_date, end_date, temporal) VALUES
-(1, 2, '2014-10-12', null, false);
+(2, 2, '2014-10-12', null, false);
 
 INSERT INTO cr_address_person(address_id, person_id, start_date, end_date, temporal) VALUES
 (1, 3, '2016-02-05', null, false);
 
 INSERT INTO cr_address_person(address_id, person_id, start_date, end_date, temporal) VALUES
-(1, 3, '2018-12-11', null, false);
+(1, 4, '2018-12-11', null, false);
 
